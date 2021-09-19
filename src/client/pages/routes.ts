@@ -1,2 +1,4 @@
-export const listTodos = "/todos";
-export const manageTodo = "/manage?{id?:string}";
+export class Routes
+{
+    public static readonly home = "/home";
+}

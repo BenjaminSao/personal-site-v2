@@ -1,8 +1,5 @@
-import { ListTodosViewModel } from "./list-todos/list-todos-view-model";
-import { ManageTodoViewModel } from "./manage-todo/manage-todo-view-model";
-
+import { HomeViewModel } from "./home/home-view-model";
 
 export const pages: Array<Function> = [
-    ListTodosViewModel,
-    ManageTodoViewModel
+    HomeViewModel
 ];

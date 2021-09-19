@@ -320,7 +320,7 @@ module.exports = {
         extensions: [".ts", ".js"],
         alias: {
             // https://feathericons.com/
-            // feather: path.resolve(__dirname, "node_modules/feather-icons/dist/feather-sprite.svg"),
+            feather: path.resolve(__dirname, "node_modules/feather-icons/dist/feather-sprite.svg"),
             vue: isDev ? "@nivinjoseph/vue/dist/vue.js" : "@nivinjoseph/vue/dist/vue.runtime.common.prod.js"
         }
     }
