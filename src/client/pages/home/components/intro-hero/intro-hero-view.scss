@@ -1,0 +1,23 @@
+.intro-hero
+{
+    .hero-image-container
+    {
+        width: 100%;
+        min-height: 35rem;
+        border-radius: 20px;
+        
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        background-image: url(./images/IMG_1246.png);
+        
+        transition: 350ms all;
+    }
+    
+    .hero-image-container:hover
+    {
+        -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        transform: scale(1.02);
+    }
+}

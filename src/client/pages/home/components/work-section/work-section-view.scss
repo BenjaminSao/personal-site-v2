@@ -1,0 +1,67 @@
+.work-section
+{
+    .timeline
+    {
+        padding-left: 4rem;
+        border-left: 0.3125rem solid #D0D6E6;
+        
+        .timeline-bubble
+        {
+            border: 0.3125rem solid #D0D6E6;
+            background: white;
+            border-radius: 50%;
+            width: 2rem;
+            height: 2rem;
+            
+            transition: 350ms all;
+            
+            position: absolute;
+            left: -0.875rem
+        }
+        
+        
+    }
+    
+    .custom-work-card
+    {
+        border-radius: 20px;
+        overflow: hidden;
+        height: 25rem;
+        
+        transition: 350ms all;
+        
+        .custom-work-card-start
+        {
+            max-width: 2%;
+            height: 100%;
+        }
+        
+        .custom-work-card-main
+        {
+            min-height: 100%;
+            
+            .custom-work-card-content
+            {
+                
+            }
+        }
+    }
+    
+    .card-hover-animation:hover
+    {
+        
+        >.custom-work-card
+        {
+            -webkit-transform: scale(1.02);
+            -ms-transform: scale(1.02);
+            transform: scale(1.02);
+        }
+        
+        >.timeline-bubble
+        {
+            -webkit-transform: scale(1.3);
+            -ms-transform: scale(1.3);
+            transform: scale(1.3);
+        }
+    }
+}
