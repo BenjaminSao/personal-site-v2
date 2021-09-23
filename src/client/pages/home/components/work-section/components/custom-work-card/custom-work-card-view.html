@@ -1,0 +1,44 @@
+<div class="custom-work-card">
+    <div v-for="workCard of workCards">
+        <div class="card-hover-animation mb-5">
+            <div class="timeline-bubble"></div>
+            <div class="columns is-mobile is-gapless custom-work-card-body">
+                <div
+                    class="column  custom-work-card-start"
+                    :class="{ 'has-background-info': workCard.type === 'work', 'has-background-dark': workCard.type === 'school'}"
+                ></div>
+                <div class="column custom-work-card-main has-background-light">
+                    <div
+                        class="custom-work-card-content is-flex is-align-items-center"
+                    >
+                        <div>
+                            <svg class="icon is-medium is-dark">
+                                <use v-if="workCard.type === 'work'" xlink:href="~feather#briefcase"></use>
+                                <use v-if="workCard.type === 'school'" xlink:href="~feather#book"></use>
+                            </svg>
+                            <div class="ml-1">
+                                <h3 class="has-text-weight-bold">
+                                    {{ workCard.name }}
+                                </h3>
+                                <h4 class="mb-4">
+                                    {{ workCard.date }}
+                                </h4>
+                                <p class="mb-4">
+                                    {{ workCard.description }}
+                                </p>
+                                <div v-for="tag of workCard.tags" class="tag-box mr-1 mb-1">
+                                    <p class="tag-box-text">
+                                        {{ tag }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="column is-hidden-mobile is-4 custom-work-card-image" :style="'background-image: url(' + workCard.image + ');'"
+                ></div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,68 @@
+.project-panels
+{
+    
+    .project-panel
+    {
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        background: rgba(0, 0, 0, 0.55);
+        background-blend-mode: darken;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        
+        border-radius: 20px;
+        overflow: hidden;
+        
+        min-width: 100%;
+        height: fit-content;
+        padding: 4rem;
+        
+        color: white;
+        
+        transition: 300ms all;
+        
+        .project-panel-content
+        {
+            height: 100%;
+            
+            .tag-box
+            {
+                display: inline-block;
+                
+                padding: 5px 10px;
+                
+                border-radius: 20px;
+                
+                color: #363636;
+                background-color: white;
+                
+                transition: 500ms all;
+                
+                .tag-box-text
+                {
+                    font-size: 0.75rem;
+                    font-weight: bold;
+                }
+            }
+            
+            .tag-box:hover
+            {
+                background-color: #4A4A4A;
+                color: white;
+            }
+        }
+    }
+    
+    .project-panel:hover
+    {
+        -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        transform: scale(1.02);
+        
+        background: rgba(0, 0, 0, 0.2);
+        background-blend-mode: darken;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+    }
+}

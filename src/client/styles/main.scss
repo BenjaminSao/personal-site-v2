@@ -26,6 +26,11 @@ h4
     font-size: 1.25rem;
 }
 
+.box-shadow-1
+{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
 
 .icon
 {
@@ -39,4 +44,12 @@ h4
     {
         stroke: $dark;
     }
+    
+    &.is-small
+    {
+        width: 10px;
+        height: 10px;
+    }
 }
+
+$input-radius: 50px;
