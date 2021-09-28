@@ -7,7 +7,6 @@
         border-radius: 20px;
         overflow: hidden;
         
-        
         transition: 350ms all;
         
         @include from($tablet)
@@ -48,6 +47,20 @@
         }
     }
     
+    .timeline-date
+    {
+        position: absolute;
+        left: -6.75rem;
+        padding-top: 0.5rem;
+        z-index: 10;
+        
+        transform: rotate(270deg);
+        
+        opacity: 0;
+        
+        transition: 500ms opacity;
+    }
+    
     .card-hover-animation:hover
     {
         
@@ -64,6 +77,25 @@
             -ms-transform: scale(1.3);
             transform: scale(1.3);
         }
+        
+        >.timeline-date
+        {
+            opacity: 1;
+        }
+    }
+    
+    .timeline-bubble
+    {
+        border: 0.3125rem solid #7A7A7A;
+        background: white;
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        
+        transition: 350ms all;
+        
+        position: absolute;
+        left: -0.875rem
     }
     
     .tag-box

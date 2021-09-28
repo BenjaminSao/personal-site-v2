@@ -1,4 +1,28 @@
 .project-section
 {
+    .tag-box
+    {
+        display: inline-block;
+        
+        padding: 5px 10px;
+        
+        border-radius: 20px;
+        
+        color: #363636;
+        background-color: white;
+        
+        transition: 500ms all;
+        
+        .tag-box-text
+        {
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+    }
     
+    .tag-box:hover
+    {
+        background-color: #4A4A4A;
+        color: white;
+    }
 }

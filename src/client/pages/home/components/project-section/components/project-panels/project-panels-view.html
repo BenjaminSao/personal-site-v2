@@ -10,7 +10,7 @@
                             {{ projectData.description }}
                         </p>
                         <div class="tag-box mr-2 mb-2 is-clickable box-shadow-1" v-for="tag of projectData.tags">
-                            <p class="tag-box-text">{{ tag }}</p>
+                            <p class="tag-box-text" @click="tagSelected(tag)">{{ tag }}</p>
                         </div>
                     </div>
                 </div>
