@@ -2,6 +2,9 @@ import { components, ComponentViewModel, element, template } from "@nivinjoseph/
 import { CustomWorkCardViewModel } from "./components/custom-work-card/custom-work-card-view-model";
 import "./work-section-view.scss";
 
+// @ts-ignore
+import ScrollReveal from "scrollreveal";
+
 @template(require("./work-section-view.html"))
 @element("work-section")
 @components(CustomWorkCardViewModel)
@@ -27,6 +30,21 @@ export class WorkSectionViewModel extends ComponentViewModel
     ];
     
     public get workCards() { return this._workCards; }
+    
+    protected onMount(element: HTMLElement)
+    {
+        super.onMount(element);
+        
+        const slideUpWorkSection = {
+            origin: "bottom",
+            distance: "100px",
+            duration: 500,
+            // delay: 250,
+            interval: 20
+        };
+        
+        ScrollReveal().reveal(".slideUpWorkSection", slideUpWorkSection);
+    }
 }
 
 interface WorkCard

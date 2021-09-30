@@ -1,16 +1,28 @@
 <div class="project-panels">
     <div class="columns" v-for="(item, index) in projectsData">
-        <div class="column" v-for="projectData of projectsData[index]">
-            <div class="project-panel" :style="'background-image: url(' + projectData.image + ');'">
+        <div class="column reveal" v-for="projectData of projectsData[index]">
+            <div
+                class="project-panel"
+                :style="'background-image: url(' + projectData.image + ');'"
+            >
                 <div class="project-panel-content columns is-vcentered">
                     <div class="column">
-                        <h2 class="has-text-weight-bold">{{ projectData.name }}</h2>
-                        <h3 class=" has-text-weight-bold mb-5">{{ projectData.subtitle }}</h3>
+                        <h2 class="has-text-weight-bold">
+                            {{ projectData.name }}
+                        </h2>
+                        <h3 class=" has-text-weight-bold mb-5">
+                            {{ projectData.subtitle }}
+                        </h3>
                         <p class="has-text-weight-bold mb-2">
                             {{ projectData.description }}
                         </p>
-                        <div class="tag-box mr-2 mb-2 is-clickable box-shadow-1" v-for="tag of projectData.tags">
-                            <p class="tag-box-text" @click="tagSelected(tag)">{{ tag }}</p>
+                        <div
+                            class="tag-box mr-2 mb-2 is-clickable box-shadow-1"
+                            v-for="tag of projectData.tags"
+                        >
+                            <p class="tag-box-text" @click="tagSelected(tag)">
+                                {{ tag }}
+                            </p>
                         </div>
                     </div>
                 </div>

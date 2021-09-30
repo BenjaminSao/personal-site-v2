@@ -6,7 +6,6 @@ import "./project-section-view.scss";
 @template(require("./project-section-view.html"))
 @element("project-section")
 @components(ProjectPanelsViewModel)
-
 export class ProjectSectionViewModel extends ComponentViewModel
 {
     private readonly _projectsData: ReadonlyArray<ProjectData> = [
