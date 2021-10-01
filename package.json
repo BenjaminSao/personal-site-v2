@@ -1,7 +1,7 @@
 {
-    "name": "n-app-todo",
-    "version": "0.0.1",
-    "description": "n app todo app",
+    "name": "personal-site-v2",
+    "version": "2.0.1",
+    "description": "personal site version 2",
     "main": "src/server/server.js",
     "scripts": {
         "ts-compile": "tsc -p .",
@@ -24,20 +24,11 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/shreymahendru/n-app-todo.git"
+        "url": "git+https://github.com/BenjaminSao/personal-site-v2"
     },
-    "keywords": [
-        "n-app",
-        "todo",
-        "web",
-        "app"
-    ],
-    "author": "Shrey Mahendru",
+    "author": "Benjamin Saobuppha",
     "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/shreymahendru/n-app-todo/issues"
-    },
-    "homepage": "https://github.com/SofDevInc/n-app-todo#readme",
+    "homepage": "",
     "devDependencies": {
         "@babel/core": "^7.14.6",
         "@babel/preset-env": "^7.14.7",
