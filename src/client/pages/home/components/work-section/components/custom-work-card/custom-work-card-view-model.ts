@@ -16,9 +16,8 @@ export class CustomWorkCardViewModel extends ComponentViewModel
         const slideRightCards = {
             origin: "right",
             distance: "100px",
-            duration: 750,
             delay: 300,
-            interval: 80
+            interval: 40
         };
         
         ScrollReveal().reveal(".slideRightCards", slideRightCards);

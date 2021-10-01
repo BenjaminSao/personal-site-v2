@@ -2,13 +2,23 @@
 
 .work-section
 {
+    position: relative;
+    
     .timeline
     {
         @include from($tablet)
         {
-            padding-left: 4rem;
+            margin-left: 3rem;
+            padding-left: 2.5rem;
 
             border-left: 0.3125rem solid #7A7A7A;
         }
+    }
+    
+    
+    .work-section-anchor
+    {
+        position: absolute;
+        top: -5rem;
     }
 }

@@ -56,21 +56,21 @@ export class ProjectSectionViewModel extends ComponentViewModel
             subtitle: "Grimsby Thai",
             description: "Designed and created a modern looking website using Weebly for the Restuarant, Grimsby Thai Cuisine. Displays elements such as a Home and Menu page.",
             image: require("./images/84cdcc11c8b00a7910666034a3ab68b9-grimsby-thai.png"),
-            tags: ["Weebly", "HTML", "CSS"]
+            tags: ["HTML", "CSS"]
         },
         {
             name: "Thailandia Website",
             subtitle: "Thailandia",
             description: "Designed and created a modern looking website using Weebly for the Restuarant, Thailandia. Displays elements such as a Home and Menu page.",
             image: require("./images/d7d8e861a54ab9dc205d458ca2a20748-thailandia.png"),
-            tags: ["Weebly", "HTML", "CSS"]
+            tags: ["HTML", "CSS"]
         },
         {
             name: "Young Thai Website",
             subtitle: "Young Thai",
             description: "Designed and created a modern looking website using Weebly for the Restuarant, Young Thai. Displays elements such as a Home and Menu page.",
             image: require("./images/3b54a8a0158744320dcd87ce96cff8c5-young-thai.png"),
-            tags: ["Weebly", "HTML", "CSS"]
+            tags: ["HTML", "CSS"]
         }
     ];
     

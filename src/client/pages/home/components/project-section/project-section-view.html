@@ -1,4 +1,5 @@
 <div class="project-section">
+    <div class="project-section-anchor" id="project-section"></div>
     <section class="section">
         <div class="container">
             <h2 class="has-text-weight-bold mb-4">Projects</h2>
@@ -15,7 +16,7 @@
                 </div>
             </div>
             <div
-                class="tag-box mr-3 mb-4 is-clickable box-shadow-1"
+                class="tag-box mr-3 mb-4 is-clickable"
                 v-for="tag of uniqueTags"
             >
                 <p class="tag-box-text" @click="tagSelected(tag)">{{ tag }}</p>

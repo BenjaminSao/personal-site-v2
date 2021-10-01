@@ -1,41 +1,41 @@
 <div class="custom-navbar">
     <div class="navbar-wrapper">
-        <nav class="navbar is-fixed-top p-4">
+        <nav class="navbar box-shadow-3 is-fixed-top">
             <div class="navbar-brand">
-                <figure class="image is-64x64 is-hidden-desktop">
-                    <img src="./images/Benlogo.svg" alt="">
+                <figure class="image is-64x64 is-hidden-desktop is-clickable" @click="gotoHome">
+                    <img src="./images/Benlogo.svg" alt="" />
                 </figure>
-                <div class="navbar-burger mt-1">
+                <div class="navbar-burger mt-1" @click="toggleDropdown">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </div>
             </div>
-            <div class="navbar-menu is-active">
+            <div class="navbar-menu" :class="{ 'is-active': isDropdownOpen }">
                 <div class="navbar-start">
-                    <div class="navbar-item mx-6">
-                        <h4>About_Me</h4>
+                    <div class="navbar-item mr-6">
+                        <h4><a @click="gotoHome">About_Me</a></h4>
                     </div>
                     <div class="navbar-item mr-6">
-                        <h4>Projects</h4>
+                        <h4><a href="#work-section">Experiences</a></h4>
                     </div>
                     <div class="navbar-item mr-6">
-                        <h4>Experiences</h4>
+                        <h4><a href="#project-section">Projects</a></h4>
                     </div>
                 </div>
-                <div class="navbar-logo is-hidden-mobile">
-                    <figure class="image is-48x48" >
-                        <img src="./images/Benlogo.svg" alt="">
+                <div class="navbar-logo is-hidden-tablet-only is-hidden-mobile">
+                    <figure class="image is-48x48">
+                        <img src="./images/Benlogo.svg" alt="" />
                     </figure>
                 </div>
                 <div class="navbar-end">
                     <div class="navbar-item mr-6">
-                        <svg class="icon is-dark">
+                        <svg class="icon is-dark is-clickable" @click="gotoLinkedIn">
                             <use xlink:href="~feather#linkedin"></use>
                         </svg>
                     </div>
-                    <div class="navbar-item mr-6">
-                        <svg class="icon is-dark">
+                    <div class="navbar-item">
+                        <svg class="icon is-dark is-clickable" @click="gotoGithub">
                             <use xlink:href="~feather#github"></use>
                         </svg>
                     </div>

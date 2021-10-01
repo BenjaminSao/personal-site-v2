@@ -1,15 +1,18 @@
 .project-section
 {
+    position: relative;
+    
     .tag-box
     {
         display: inline-block;
         
-        padding: 5px 10px;
+        padding: 6px 10px;
         
         border-radius: 20px;
         
-        color: #363636;
-        background-color: white;
+        color: white;
+        
+        background-color: #4f4f4f;
         
         transition: 500ms all;
         
@@ -22,7 +25,14 @@
     
     .tag-box:hover
     {
-        background-color: #4A4A4A;
+        background-color: #7f7f7f;
         color: white;
+    }
+    
+    
+    .project-section-anchor
+    {
+        position: absolute;
+        top: -5rem;
     }
 }
