@@ -1,6 +1,6 @@
 <div class="project-panels">
     <div class="columns" v-for="(item, index) in projectsData">
-        <div class="column reveal" v-for="projectData of projectsData[index]">
+        <div class="column reveal is-clickable" v-for="projectData of projectsData[index]">
             <div
                 class="project-panel"
                 :style="'background-image: url(' + projectData.image + ');'"
