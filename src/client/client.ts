@@ -34,6 +34,7 @@ const client = new ClientApp("#app", "shell")
     .registerComponents(...components) // registering all your app components
     .registerPages(...pages)  // registering all your app pages
     .useAsInitialRoute(Routes.home)
-    .useAsUnknownRoute(Routes.home);
+    .useAsUnknownRoute(Routes.home)
+    .useHistoryModeRouting();
 
 client.bootstrap();

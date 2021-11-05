@@ -6,6 +6,5 @@ import "./project-view.scss";
 @route(Routes.project)
 export class ProjectViewModel extends PageViewModel
 {
-    public get value() { return 2; }
-    public get iconClasses() { return ["icon-rate-face-1"]; }
+    
 }

@@ -4,13 +4,13 @@
             <div class="is-flex is-justify-content-center">
                 <div>
                     <div class="mb-5 is-flex is-justify-content-center">
-                        <svg class="icon mr-3">
+                        <svg class="icon mr-3 is-clickable" @click="gotoLinkedIn">
                             <use xlink:href="~feather#linkedin"></use>
                         </svg>
-                        <svg class="icon mr-3">
+                        <svg class="icon mr-3 is-clickable" @click="gotoGithub">
                             <use xlink:href="~feather#github"></use>
                         </svg>
-                        <svg class="icon">
+                        <svg class="icon is-clickable" @click="gotoInstagram">
                             <use xlink:href="~feather#instagram"></use>
                         </svg>
                     </div>
