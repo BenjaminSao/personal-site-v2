@@ -1,0 +1,53 @@
+<div class="project-description-section">
+    <section class="section">
+        <div class="container">
+            <h2 class="has-text-weight-bold mb-6 mt-5 slideLeft">
+                Read_More
+                <svg class="icon is-dark">
+                    <use xlink:href="~feather#code"></use>
+                </svg>
+            </h2>
+
+            <div v-for="descriptionItem in description">
+                <div v-if="descriptionItem.type === 'text'">
+                    <div class="columns mb-6 slideBottom">
+                        <div v-for="text in descriptionItem.texts">
+                            <div class="column">
+                                <div v-if="text.header != null">
+                                    <h3 class="has-text-weight-bold mb-3">
+                                        {{ text.header }}
+                                    </h3>
+                                </div>
+                                <p>
+                                    {{ text.content }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div v-if="descriptionItem.type === 'image'">
+                    <div v-if="descriptionItem.header != null">
+                        <h3 class="has-text-weight-bold mb-4">
+                            {{ descriptionItem.header }}
+                        </h3>
+                    </div>
+                    <div class="columns mb-6 slideBottom">
+                        <div
+                            v-for="image in descriptionItem.images"
+                            class="column"
+                        >
+                            <figure class="image is-4by3">
+                                <img
+                                    :src="image"
+                                    alt=""
+                                    class="border-radius-1"
+                                />
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

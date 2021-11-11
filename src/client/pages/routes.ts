@@ -1,5 +1,5 @@
 export class Routes
 {
     public static readonly home = "/home";
-    public static readonly project = "/project";
+    public static readonly project = "/project?{id?:string}";
 }

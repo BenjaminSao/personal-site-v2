@@ -14,7 +14,7 @@ export class ShellViewModel extends ComponentViewModel
         const reveal = {
             scale: 0.85,
             duration: 750,
-            interval: 80
+            interval: 80,
         };
         
         const slideLeft = {

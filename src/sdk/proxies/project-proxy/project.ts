@@ -12,34 +12,37 @@ interface ProjectDescription
     problem: string;
     solution: string;
     projectType: ProjectType;
+    timeSpan: number | null;
     
     description: Array<DescriptionImages | DescriptionTexts>;
     
-    projectLinks: Array<ProjectLink>;
+    projectLinks: Array<ProjectLink> | null;
 }
 
 interface DescriptionImages
 {
+    type: DescriptionType;
     header: string | null;
     images: Array<string>;
 }
 
 interface DescriptionTexts
 {
+    type: DescriptionType;
     texts: Array<DescriptionText>;
 }
 
 interface DescriptionText
 {
     header: string | null;
-    text: string;
+    content: string;
 }
 
-enum ProjectType
+export enum ProjectType
 {
-    hackathon = "hackathon",
-    work = "work",
-    personal = "personal"
+    hackathon = "Hackathon",
+    work = "Work",
+    personal = "Personal"
 }
 
 interface ProjectLink
@@ -55,4 +58,11 @@ export interface ShortProjectDescription
     description: string;
     image: string | null;
     tags: ReadonlyArray<string>;
+    hasFullDescription: boolean;
+}
+
+export enum DescriptionType
+{
+    image = "image",
+    text = "text"
 }
