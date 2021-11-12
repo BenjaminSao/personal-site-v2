@@ -1,0 +1,29 @@
+<div class="project">
+    <animation v-if="project != null">
+        <custom-navbar></custom-navbar>
+
+        <project-hero
+            :name="project.shortProjectDescription.name"
+            :short-description="project.shortProjectDescription.description"
+            :has-award="project.shortProjectDescription.hasAward"
+            :image="project.shortProjectDescription.image"
+            :banner-style="project.projectDescription.bannerStyle"
+        ></project-hero>
+
+        <project-intro-section
+            :problem="project.projectDescription.problem"
+            :solution="project.projectDescription.solution"
+            :type="project.projectDescription.projectType"
+            :time-span="project.projectDescription.timeSpan"
+            :programming-languages="project.projectDescription.programmingLanguages"
+            :tags="project.shortProjectDescription.tags"
+            :links="project.projectDescription.projectLinks"
+        ></project-intro-section>
+
+        <project-description-section
+            :description="project.projectDescription.description"
+        ></project-description-section>
+
+        <custom-footer></custom-footer>
+    </animation>
+</div>

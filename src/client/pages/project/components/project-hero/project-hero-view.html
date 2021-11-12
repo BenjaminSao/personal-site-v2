@@ -1,0 +1,18 @@
+<div class="project-hero">
+    <section class="section intro-project-cover" :style="bannerStyle">
+        <div class="container">
+            <div class="column reveal">
+                <p class="mb-0 is-size-6 has-text-weight-bold">Introducing</p>
+                <h1 class="has-text-weight-bold">
+                    {{ name }}
+                    <svg class="icon is-medium is-white" v-if="hasAward">
+                        <use xlink:href="~feather#award"></use>
+                    </svg>
+                </h1>
+                <p class="has-text-weight-semibold">
+                    {{ shortDescription }}
+                </p>
+            </div>
+        </div>
+    </section>
+</div>
