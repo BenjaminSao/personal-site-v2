@@ -1,4 +1,23 @@
 .project-intro-section
 {
-    
+    .tag-box
+    {
+        display: inline-block;
+        
+        padding: 6px 10px;
+        
+        border-radius: 20px;
+        
+        color: white;
+        
+        background-color: #4f4f4f;
+        
+        transition: 500ms all;
+        
+        .tag-box-text
+        {
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+    }
 }

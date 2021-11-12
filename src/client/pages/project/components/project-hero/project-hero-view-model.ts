@@ -3,7 +3,7 @@ import "./project-hero-view.scss";
 
 @template(require("./project-hero-view.html"))
 @element("project-hero")
-@bind("name", "shortDescription")    
+@bind("name", "shortDescription", "hasAward", "image", "bannerStyle")    
 export class ProjectHeroViewModel extends ComponentViewModel
 {
     

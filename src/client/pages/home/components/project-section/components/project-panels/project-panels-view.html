@@ -1,7 +1,7 @@
 <div class="project-panels">
     <div class="columns" v-for="(item, index) in projectsData">
         <div
-            class="column reveal"
+            class="column slideRight"
             v-for="projectData of projectsData[index]"
         >
             <div
@@ -12,6 +12,12 @@
                     <div class="column">
                         <h2 class="has-text-weight-bold">
                             {{ projectData.name }}
+                            <svg
+                                class="icon is-white"
+                                v-if="projectData.hasAward"
+                            >
+                                <use xlink:href="~feather#award"></use>
+                            </svg>
                         </h2>
                         <h3 class="has-text-weight-bold mb-5">
                             {{ projectData.subtitle }}
@@ -28,8 +34,14 @@
                             </p>
                         </div>
                     </div>
-                    <div class="column is-1" v-if="projectData.hasFullDescription == true">
-                        <svg class="icon is-medium is-light is-clickable" @click="gotoProject(projectData.name)">
+                    <div
+                        class="column is-1"
+                        v-if="projectData.hasFullDescription == true"
+                    >
+                        <svg
+                            class="icon is-medium is-light is-clickable"
+                            @click="gotoProject(projectData.name)"
+                        >
                             <use xlink:href="~feather#chevron-right"></use>
                         </svg>
                     </div>

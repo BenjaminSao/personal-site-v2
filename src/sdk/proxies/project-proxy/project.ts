@@ -13,10 +13,12 @@ interface ProjectDescription
     solution: string;
     projectType: ProjectType;
     timeSpan: number | null;
+    programmingLanguages: Array<ProgrammingLanguage> | null;
+    projectLinks: Array<ProjectLink> | null;
+    
+    bannerStyle: string;
     
     description: Array<DescriptionImages | DescriptionTexts>;
-    
-    projectLinks: Array<ProjectLink> | null;
 }
 
 interface DescriptionImages
@@ -58,11 +60,21 @@ export interface ShortProjectDescription
     description: string;
     image: string | null;
     tags: ReadonlyArray<string>;
+    /**
+     * NOTE: Must be true for Project Description Page to Work
+     */
     hasFullDescription: boolean;
+    hasAward: boolean;
 }
 
 export enum DescriptionType
 {
     image = "image",
     text = "text"
+}
+
+export interface ProgrammingLanguage
+{
+    language: string;
+    percent: number;
 }

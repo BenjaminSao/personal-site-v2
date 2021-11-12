@@ -1,11 +1,11 @@
 <div class="project-description-section">
     <section class="section">
         <div class="container">
-            <h2 class="has-text-weight-bold mb-6 mt-5 slideLeft">
-                Read_More
-                <svg class="icon is-dark">
+            <h2 class="has-text-weight-bold mb-5 mt-5 slideLeft">
+                <svg class="icon is-medium is-dark">
                     <use xlink:href="~feather#code"></use>
                 </svg>
+                Read_More
             </h2>
 
             <div v-for="descriptionItem in description">
@@ -37,11 +37,11 @@
                             v-for="image in descriptionItem.images"
                             class="column"
                         >
-                            <figure class="image is-4by3">
+                            <figure class="image cover is-4by3">
                                 <img
                                     :src="image"
                                     alt=""
-                                    class="border-radius-1"
+                                    class="border-radius-1 cover"
                                 />
                             </figure>
                         </div>

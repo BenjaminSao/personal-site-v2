@@ -1,17 +1,17 @@
 <div class="project-intro-section">
     <section class="section box-shadow-3 border-radius-1">
         <div class="container pt-0">
-            <h2 class="has-text-weight-bold mb-6 mt-5 slideLeft">
-                Quick_Summary
-                <svg class="icon is-dark">
+            <h2 class="has-text-weight-bold mb-5 mt-5 slideLeft">
+                <svg class="icon is-medium is-dark">
                     <use xlink:href="~feather#zap"></use>
                 </svg>
+                Overview
             </h2>
             <div class="columns slideLeft">
                 <div class="column is-flex is-align-items-center">
                     <div class="columns">
                         <div class="column is-11">
-                            <div class="mb-5">
+                            <div class="mb-4">
                                 <h3 class="has-text-weight-bold mb-3">
                                     Problem
                                 </h3>
@@ -19,7 +19,7 @@
                                     {{ problem }}
                                 </p>
                             </div>
-                            <div class="mb-6">
+                            <div class="mb-5">
                                 <h3 class="has-text-weight-bold mb-3">
                                     Solution
                                 </h3>
@@ -27,7 +27,20 @@
                                     {{ solution }}
                                 </p>
                             </div>
-                            <div class="columns mb-6">
+                            <div class="columns mb-4">
+                                <div class="column">
+                                    <h3 class="has-text-weight-bold mb-1">
+                                        Tools
+                                    </h3>
+                                    <div
+                                        class="tag-box mb-2 mr-3"
+                                        v-for="tag in tags"
+                                    >
+                                        <p class="tag-box-text">{{tag}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns mb-5">
                                 <div class="column">
                                     <h3 class="has-text-weight-bold">
                                         Project Type
@@ -41,10 +54,23 @@
                                     <p>{{ timeSpan }}hr</p>
                                 </div>
                             </div>
+                            <div class="mb-2">
+                                <svg
+                                    v-if="links"
+                                    v-for="link in links"
+                                    class="icon is-medium is-dark mr-4 is-clickable"
+                                    @click="gotoLink(link.url)"
+                                >
+                                    <!-- FIXME: Hacky Solution? -->
+                                    <use
+                                        :xlink:href="'/2d7f00f55b702143ca68445264adac80.svg#' + link.logo"
+                                    ></use>
+                                </svg>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="column is-4 mr-5">
+                <div class="column is-4 mr-5" v-if="programmingLanguages">
                     <canvas id="programming-language-chart"></canvas>
                 </div>
             </div>
