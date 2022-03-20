@@ -1,6 +1,6 @@
 {
     "name": "personal-site-v2",
-    "version": "2.0.1",
+    "version": "2.1.1",
     "description": "personal site version 2",
     "main": "src/server/server.js",
     "scripts": {
