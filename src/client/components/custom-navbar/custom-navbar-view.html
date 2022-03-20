@@ -2,7 +2,10 @@
     <div class="navbar-wrapper">
         <nav class="navbar box-shadow-3 is-fixed-top">
             <div class="navbar-brand">
-                <figure class="image is-64x64 is-hidden-desktop is-clickable" @click="gotoHome">
+                <figure
+                    class="image is-64x64 is-hidden-desktop is-clickable"
+                    @click="gotoHome"
+                >
                     <img src="./images/Benlogo.svg" alt="" />
                 </figure>
                 <div class="navbar-burger mt-1" @click="toggleDropdown">
@@ -14,28 +17,51 @@
             <div class="navbar-menu" :class="{ 'is-active': isDropdownOpen }">
                 <div class="navbar-start">
                     <div class="navbar-item mr-6">
-                        <h4><a href="intro-hero">About_Me</a></h4>
+                        <h4>
+                            <a href="../../pages/home/home-view.html/intro-hero"
+                                >About_Me</a
+                            >
+                        </h4>
                     </div>
                     <div class="navbar-item mr-6">
-                        <h4><a href="#work-section">Experiences</a></h4>
+                        <h4>
+                            <a
+                                href="../../pages/home/home-view.html/#work-section"
+                                >Experiences</a
+                            >
+                        </h4>
                     </div>
                     <div class="navbar-item mr-6">
-                        <h4><a href="#project-section">Projects</a></h4>
+                        <h4>
+                            <a
+                                href="../../pages/home/home-view.html/#project-section"
+                                >Projects</a
+                            >
+                        </h4>
                     </div>
                 </div>
-                <div class="navbar-logo is-hidden-tablet-only is-hidden-mobile is-clickable" @click="gotoHome">
+                <div
+                    class="navbar-logo is-hidden-tablet-only is-hidden-mobile is-clickable"
+                    @click="gotoHome"
+                >
                     <figure class="image is-48x48">
                         <img src="./images/Benlogo.svg" alt="" />
                     </figure>
                 </div>
                 <div class="navbar-end">
                     <div class="navbar-item mr-6">
-                        <svg class="icon is-dark is-clickable" @click="gotoLinkedIn">
+                        <svg
+                            class="icon is-dark is-clickable"
+                            @click="gotoLinkedIn"
+                        >
                             <use xlink:href="~feather#linkedin"></use>
                         </svg>
                     </div>
                     <div class="navbar-item">
-                        <svg class="icon is-dark is-clickable" @click="gotoGithub">
+                        <svg
+                            class="icon is-dark is-clickable"
+                            @click="gotoGithub"
+                        >
                             <use xlink:href="~feather#github"></use>
                         </svg>
                     </div>

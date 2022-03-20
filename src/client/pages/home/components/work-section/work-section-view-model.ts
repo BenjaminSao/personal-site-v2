@@ -13,9 +13,17 @@ export class WorkSectionViewModel extends ComponentViewModel
     private readonly _workCards: ReadonlyArray<WorkCard> = [
         {
             type: WorkCardType.work,
+            name: "Oracle - Incoming Software Developer",
+            date: "2022 (4-month)",
+            description: "Will partake in an Internship (4-month) position @ Oracle Netsuite as a Software Developer within the Cash Management Team. This internship will commence in May 2022.",
+            tags: [],
+            image: require("./images/tsconfig.client.png")
+        },
+        {
+            type: WorkCardType.work,
             name: "NS Labs Inc - Software Development Engineer",
             date: "2021 (8-month)",
-            description: "Started an Internship (8-month) position @ NS Labs as a Software Development Engineer. Worked with web applications, creating insights on consumer B2C enterprise applications, documenting company framework & code.",
+            description: "Started an Internship (8-month) @ NS Labs as a Software Development Engineer. Worked with web applications, creating insights on consumer B2C enterprise applications, documenting company framework & code.",
             tags: ["Vue.js", "TypeScript", "SCSS"],
             image: require("./images/90d9fcc5c4a4dc0d2b2c20c2edee98a5.png")
         },

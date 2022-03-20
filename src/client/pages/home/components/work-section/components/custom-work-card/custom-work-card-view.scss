@@ -42,7 +42,8 @@
         {
             background: rgba(0, 0, 0, 0.02);
             background-blend-mode: darken;
-            background-size: cover;
+            background-size: contain;
+            background-repeat: no-repeat;
             background-position-x: center;
             background-position-y: center;
         }
