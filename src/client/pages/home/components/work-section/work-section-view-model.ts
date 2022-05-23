@@ -15,7 +15,7 @@ export class WorkSectionViewModel extends ComponentViewModel
             type: WorkCardType.work,
             name: "Oracle - Incoming Software Developer",
             date: "2022 (4-month)",
-            description: "Will partake in an Internship (4-month) position @ Oracle Netsuite as a Software Developer within the Cash Management Team. This internship will commence in May 2022.",
+            description: "Started an Internship (4-month) position @ Oracle Netsuite as a Software Developer Co-op fot the ERP Cash Management Team.",
             tags: [],
             image: require("./images/tsconfig.client.png")
         },
