@@ -1,6 +1,11 @@
 @import "./_variables.scss";
 @import "~bulma/bulma";
 
+body
+{
+    font-family: "Work Sans";
+}
+
 * 
 {
     box-sizing: border-box;
