@@ -13,11 +13,19 @@ export class WorkSectionViewModel extends ComponentViewModel
     private readonly _workCards: ReadonlyArray<WorkCard> = [
         {
             type: WorkCardType.work,
-            name: "Oracle - Incoming Software Developer",
+            name: "Oracle - Software Developer Co-op",
             date: "2022 (4-month)",
-            description: "Started an Internship (4-month) position @ Oracle Netsuite as a Software Developer Co-op fot the ERP Cash Management Team.",
+            description: "Started an Internship (4-month) position @ Oracle NetSuite as a Software Developer Co-op for the ERP Cash Management Team. Worked creating core functionality within the NetSuite enterprise B2B application, debugging customer accounts in production, and more.",
             tags: [],
-            image: require("./images/tsconfig.client.png")
+            image: require("./images/oracle-logo.png")
+        },
+        {
+            type: WorkCardType.work,
+            name: "Hack the Valley - Web Developer",
+            date: "2022",
+            description: "Started volunteering @ HTV Executive Team as a Web Developer. Worked with managing the web application UI and backend applicant registration APIs.",
+            tags: [],
+            image: require("./images/htv-logo.svg")
         },
         {
             type: WorkCardType.work,
@@ -25,7 +33,7 @@ export class WorkSectionViewModel extends ComponentViewModel
             date: "2021 (8-month)",
             description: "Started an Internship (8-month) @ NS Labs as a Software Development Engineer. Worked with web applications, creating insights on consumer B2C enterprise applications, documenting company framework & code.",
             tags: ["Vue.js", "TypeScript", "SCSS"],
-            image: require("./images/90d9fcc5c4a4dc0d2b2c20c2edee98a5.png")
+            image: require("./images/ns-lab-logo.png")
         },
         {
             type: WorkCardType.school,
@@ -33,7 +41,7 @@ export class WorkSectionViewModel extends ComponentViewModel
             date: "2019 - Present",
             description: "Started school @ the University of Toronto. Currently, specializing in Statistics inside the Machine Learning and Data Mining Stream.",
             tags: ["Machine Learning & Data Mining", "Statistics"],
-            image: require("./images/1200px-Utoronto_coa.svg.png")
+            image: require("./images/uoft-logo.png")
         },
     ];
     
