@@ -16,15 +16,15 @@ export class WorkSectionViewModel extends ComponentViewModel
             name: "Oracle - Software Developer Co-op",
             date: "2022 (4-month)",
             description: "Started an Internship (4-month) position @ Oracle NetSuite as a Software Developer Co-op for the ERP Cash Management Team. Worked creating core functionality within the NetSuite enterprise B2B application, debugging customer accounts in production, and more.",
-            tags: [],
+            tags: ["Java", "SQL"],
             image: require("./images/oracle-logo.png")
         },
         {
             type: WorkCardType.work,
             name: "Hack the Valley - Web Developer",
-            date: "2022",
+            date: "2022 - Present",
             description: "Started volunteering @ HTV Executive Team as a Web Developer. Worked with managing the web application UI and backend applicant registration APIs.",
-            tags: [],
+            tags: ["React", "PostgreSQL"],
             image: require("./images/htv-logo.svg")
         },
         {
